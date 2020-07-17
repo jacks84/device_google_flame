@@ -31,6 +31,8 @@ $(call inherit-product, device/google/coral/aosp_flame.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
+include device/google/coral/device-aosip.mk
+
 PRODUCT_NAME := aosip_flame
 PRODUCT_DEVICE := flame
 PRODUCT_BRAND := google
