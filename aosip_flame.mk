@@ -49,7 +49,5 @@ BUILD_FINGERPRINT := "google/flame/flame:10/QQ3A.200705.002/6506677:user/release
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/flame/flame:10/QQ3A.200705.002/6506677:user/release-keys
 
-BOARD_PREBUILT_VENDORIMAGE := vendor/images/flame/vendor.img
-
 $(call inherit-product-if-exists, vendor/google/flame/flame-vendor.mk)
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
