@@ -42,12 +42,12 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="flame" \
     PRODUCT_DEVICE="flame" \
-    PRIVATE_BUILD_DESC="flame-user 10 QQ3A.200705.002 6506677 release-keys"
+    PRIVATE_BUILD_DESC="flame-user 10 QQ3A.200805.001 6578210 release-keys"
 
-BUILD_FINGERPRINT := "google/flame/flame:10/QQ3A.200705.002/6506677:user/release-keys"
+BUILD_FINGERPRINT := "google/flame/flame:10/QQ3A.200805.001/6578210:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/flame/flame:10/QQ3A.200705.002/6506677:user/release-keys
+    ro.build.fingerprint=google/flame/flame:10/QQ3A.200805.001/6578210:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/flame/flame-vendor.mk)
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
