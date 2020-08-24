@@ -36,6 +36,8 @@ $(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
 
 include device/google/coral/device-rr.mk
 
+RR_BUILDTYPE := Official
+
 PRODUCT_NAME := rr_flame
 PRODUCT_DEVICE := flame
 PRODUCT_BRAND := google
