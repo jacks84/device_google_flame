@@ -15,8 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_flame.mk \
+    $(LOCAL_DIR)/rr_flame.mk \
 
 COMMON_LUNCH_CHOICES := \
-    aosip_flame-user \
-    aosip_flame-userdebug \
+    rr_flame-user \
+    rr_flame-userdebug \

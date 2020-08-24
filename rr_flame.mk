@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2020 AOSiP
+# Copyright (C) 2018-2020 RR
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +21,8 @@
 # lines, aosp and du, hence its name.
 #
 
-# Include AOSiP common configuration
-include vendor/aosip/config/common_full_phone.mk
+# Include RR common configuration
+include vendor/rr/config/common_full_phone.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/coral/aosp_flame.mk)
@@ -31,9 +31,12 @@ $(call inherit-product, device/google/coral/aosp_flame.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-include device/google/coral/device-aosip.mk
+# Inherit PixelGApps
+$(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
 
-PRODUCT_NAME := aosip_flame
+include device/google/coral/device-rr.mk
+
+PRODUCT_NAME := rr_flame
 PRODUCT_DEVICE := flame
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4
