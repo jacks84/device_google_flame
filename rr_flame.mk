@@ -21,6 +21,9 @@
 # lines, aosp and du, hence its name.
 #
 
+#Use floral native Face Unlock
+TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := true
+
 TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
 
 # Include RR common configuration
