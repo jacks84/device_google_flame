@@ -21,6 +21,8 @@
 # lines, aosp and du, hence its name.
 #
 
+TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
+
 # Include RR common configuration
 include vendor/rr/config/common_full_phone.mk
 
